@@ -1,0 +1,59 @@
+@mixin xs {
+
+  @media (max-width: 576px) {
+
+    @content;
+
+  }
+
+}
+
+@mixin sm {
+
+  @media (min-width: 577px) and (max-width: 992px) {
+
+    @content;
+
+  }
+
+}
+
+@mixin md {
+
+  @media (min-width: 993px) {
+
+    @content;
+
+  }
+
+}
+
+
+
+@mixin grid-dinamico($mobile: 1,
+  $tablet: 2,
+  $desktop: 3) {
+
+  display: grid;
+
+  gap: 30px;
+
+  grid-template-columns: repeat($mobile, 1fr);
+
+
+
+  @include sm {
+
+    grid-template-columns: repeat($tablet, 1fr);
+
+  }
+
+
+
+  @include md {
+
+    grid-template-columns: repeat($desktop, 1fr);
+
+  }
+
+}

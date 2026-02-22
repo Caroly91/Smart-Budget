@@ -1,0 +1,51 @@
+@use "variables";
+@use "utilities";
+
+// CONTENEDOR GLOBAL
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 1rem;
+}
+
+// HERO
+.hero {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+// GRID TARJETAS
+.tarjetas {
+  @include utilities.grid-dinamico(1, 2, 3); // móvil 1 columna, tablet 2, desktop 3
+  gap: variables.$espaciado;
+}
+
+// CTA
+.cta {
+  text-align: center;
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.cta__nota {
+  color: variables.$color-gris;
+  margin-top: 12px;
+  font-size: 0.95rem;
+}
+
+// FOOTER
+.footer {
+  background: variables.$color-primario;
+  padding: clamp(1.5rem, 4vw, 2rem);
+  text-align: center;
+}
+
+.footer__link {
+  color: variables.$color-blanco;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all .3s ease;
+
+  &:hover {
+    opacity: .8;
+  }
+}

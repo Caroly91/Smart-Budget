@@ -1,0 +1,14 @@
+Para generar la compilacion veamos varias formas, se ejecutaran desde el terminal de Vscode:
+
+1. Caso que el resultado se quiera en la misma carpeta:
+
+    sass assets/css/styles.scss assets/css/styles.css
+
+2. Caso que el resultado se quiera en otra carpeta:
+
+    sass assets/css/styles.scss assets/css/dist/styles.css
+
+3. Caso que el resultado se quiera en la misma carpeta, pero monitoree cambios:
+
+    sass --watch assets/css/styles.scss assets/css/styles.css    
+ 

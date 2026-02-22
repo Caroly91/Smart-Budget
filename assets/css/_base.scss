@@ -1,0 +1,41 @@
+@use "variables";
+
+
+body {
+
+    font-family: variables.$fuente-principal;
+
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    color: variables.$color-negro;
+
+}
+
+
+img {
+
+    max-width: 100%;
+    display: block;
+
+}
+
+
+// ANIMACION VISUAL
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+
+}
