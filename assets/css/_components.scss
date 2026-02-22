@@ -231,7 +231,7 @@
         box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.15);
         cursor: pointer;
 
-        // fondo glass solo para card--paso
+        // fondo glass
         &.card--paso {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(4px);
